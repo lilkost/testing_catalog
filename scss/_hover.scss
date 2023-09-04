@@ -1,0 +1,19 @@
+@media (min-width: 1000px) {
+    .catalog__item:hover{
+        &:before {
+            clip-path: circle(71% at 0% 50%);
+        }
+        .catalog__item-txt{
+            padding-left: 22px;
+            color: #fff;
+
+            &::after,
+            &::before{
+                opacity: 1;
+            }
+        }
+    }
+    .catalog__item.catalog__item_big-col:hover::before{
+        clip-path: ellipse(88% 47% at 50% 1%)
+    }
+}
